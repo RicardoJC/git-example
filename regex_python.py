@@ -14,3 +14,7 @@ if regexPalabra.findall(textoQuijote):
     for resultado in pattern:
         with io.open("salidaRegex.txt","a", encoding="utf-8") as salida:
             salida.write(resultado[0] + ' : ' + resultado[1] + '\n')
+
+
+
+            
