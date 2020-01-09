@@ -11,7 +11,6 @@ if regexPalabra.findall(textoQuijote):
     pattern = regexPalabra.findall(textoQuijote)
     print(pattern)
     # Las siguientes lineas permiten escribir los resultados en un txt.
-    #for resultado in pattern:
-        #with io.open("salidaRegex.txt","a", encoding="utf-8") as salida:
-            #salida.write(resultado[0] + ' : ' + resultado[1] + '\n')
-
+    for resultado in pattern:
+        with io.open("salidaRegex.txt","a", encoding="utf-8") as salida:
+            salida.write(resultado[0] + ' : ' + resultado[1] + '\n')
